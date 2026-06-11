@@ -1,0 +1,12 @@
+---
+BasedOnStyle: LLVM
+ColumnLimit: 86
+IndentWidth: 8
+AccessModifierOffset: -4
+AlignAfterOpenBracket: false
+AllowShortIfStatementsOnASingleLine: Always
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+AllowShortBlocksOnASingleLine: Always
+UseTab: Always
+

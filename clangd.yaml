@@ -1,0 +1,44 @@
+Diagnostics:
+  ClangTidy:
+    Add: [
+      bugprone-*,
+      clang-analyzer-*,
+      concurrency-*,
+      misc-*,
+      performance-*,
+      readability-*,
+    ]
+    Remove: [
+      bugprone-assignment-in-if-condition,
+      readability-braces-around-statements,
+      readability-identifier-length,
+      readability-implicit-bool-conversion,
+      readability-magic-numbers,
+    ]
+
+CompileFlags:
+  Add: [-Wall, -Wextra]
+
+---
+If:
+  PathMatch: .*\.c
+CompileFlags:
+  Add: [-std=gnu2y]
+
+---
+If:
+  PathMatch: .*\.h
+CompileFlags:
+  Add: [-xc, -std=gnu2y]
+
+---
+If:
+  PathMatch: .*\.cpp
+CompileFlags:
+  Add: [-std=gnu++2c]
+
+---
+If:
+  PathMatch: .*\.hpp
+CompileFlags:
+  Add: [-xc++, -std=gnu++2c]
