@@ -1,6 +1,6 @@
 ---
 BasedOnStyle: LLVM
-ColumnLimit: 90
+ColumnLimit: 0
 IndentWidth: 4
 TabWidth: 4
 AccessModifierOffset: -4
@@ -10,4 +10,5 @@ AllowShortCaseLabelsOnASingleLine: true
 AllowShortLoopsOnASingleLine: true
 AllowShortBlocksOnASingleLine: Always
 UseTab: Always
+PenaltyExcessCharacter: 0
 

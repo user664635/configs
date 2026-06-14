@@ -13,7 +13,9 @@ Diagnostics:
       readability-braces-around-statements,
       readability-identifier-length,
       readability-implicit-bool-conversion,
+      readability-isolate-declaration,
       readability-magic-numbers,
+      readability-math-missing-parentheses,
       readability-named-parameter,
     ]
 
