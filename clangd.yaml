@@ -4,6 +4,7 @@ Diagnostics:
       bugprone-*,
       clang-analyzer-*,
       concurrency-*,
+      cppcoreguidelines-*,
       misc-*,
       performance-*,
       readability-*,
@@ -11,6 +12,11 @@ Diagnostics:
     Remove: [
       bugprone-assignment-in-if-condition,
       bugprone-narrowing-conversions,
+      cppcoreguidelines-avoid-*,
+      cppcoreguidelines-init-variables,
+      cppcoreguidelines-narrowing-conversions,
+      cppcoreguidelines-pro-*,
+      cppcoreguidelines-special-member-functions,
       readability-braces-around-statements,
       readability-identifier-length,
       readability-implicit-bool-conversion,
@@ -18,11 +24,12 @@ Diagnostics:
       readability-magic-numbers,
       readability-math-missing-parentheses,
       readability-named-parameter,
+      readability-static-accessed-through-instance,
       misc-non-private-member-variables-in-classes
     ]
 
 CompileFlags:
-  Add: [-Wall, -Wextra]
+  Add: [-Wall, -Wextra, -Wshadow-all]
 
 ---
 If:
